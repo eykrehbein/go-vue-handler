@@ -20,6 +20,6 @@ func Handler(publicDir string) http.Handler {
 		}
 
 		// the all 404 gonna be served as root
-		http.ServeFile(w, req, path.Join(publicDir, "/index.html"))
+		http.ServeFile(w, req, path.Join(publicDir, "/dist/index.html"))
 	})
 }
